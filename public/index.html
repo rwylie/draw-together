@@ -1,0 +1,57 @@
+
+<!doctype html>
+<html>
+<head>
+  <title>Draw Together</title>
+</head>
+<body>
+  <h1 style="color: #84C49A; text-align: center;">Draw Together</h1>
+  <style>
+  body {
+    background-color: #1B373E;
+  }
+  </style>
+
+<canvas width="500" height="400"
+    style="
+    background-color: white;
+    margin: auto;
+    display: block;
+    border: 3px solid #84C49A;
+    padding: 10px;;">
+  </canvas>
+<!--change color buttons -->
+<div style="text-align: center; color: white">
+  <label><h3 style="color: #84C49A"> Choose Color</h3></label>
+    <input type='color' value='#000000' onchange='colorChange(this.value)'>
+</div>
+
+<!--change thickness buttons -->
+<div style="text-align:center; color: white;">
+  <label><h3 style="color: #84C49A"> Choose Pen </h3></label>
+    <input type="radio" name="pen" checked='true' value="1" onfocus='sizeChange(this.value)'> Small
+    <input type="radio" name="pen" value="5" onfocus='sizeChange(this.value)'> Medium
+    <input type="radio" name="pen" value="9" onfocus='sizeChange(this.value)'> Large
+</div>
+
+<!--ERASE -->
+
+  <script src="//code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="frontend.js"></script>
+<script> var socket = io() </script>
+
+</body>
+</html>
+
+  <script src="//code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="frontend.js"></script>
+<script> var socket = io() </script>
+
+</body>
+</html>
