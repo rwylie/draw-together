@@ -19,6 +19,6 @@ io.on('connection', function(socket) {
 
 
 //instead of app.listen we not only want web request but socket immessions
-http.listen(8000, function () {
-  console.log('listening on port 8000');
+http.listen(9000, function () {
+  console.log('listening on port 9000');
 });
